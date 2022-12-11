@@ -1,0 +1,46 @@
+.data {
+   margin-bottom: 223px;
+   &__displayNone{
+      display: none;
+   }
+  &__box {
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 60px;
+     &-name {
+        margin-top: 33px;
+        width: calc(33.33333% - 40px);
+        &-text {
+           @include text(500, 16px, 22px, #ABB1C5);
+           padding-bottom: 15px;
+        }
+        &-desc {
+           @include text(500, 18px, 22px, $black);
+        }
+        &-password {
+           border-bottom: 1px solid blue;
+           @include text(500, 18px, 22px, $blue);
+        }
+
+        &-input {
+           width: 100%;
+           padding: 19px 20px;
+           border: none;
+           border-radius: 10px;
+           @include text(500,18px, 22px, $black);
+        }
+     }
+  }
+
+  &__button {
+     &-btn {
+        padding: 19px 30px;
+        @include text(700, 20px, 22px, #fff);
+        border-radius: 10px;
+        background: $blue;
+        border: none;
+        margin-top: 50px;
+        cursor: pointer;
+     }
+  }
+}

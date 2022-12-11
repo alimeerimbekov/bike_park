@@ -1,0 +1,226 @@
+.bikeList {
+  margin-bottom: 122px;
+
+  &__boxes {
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding-bottom: 40px;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-title {
+      @include text(500, 16px, 22px, #ABB1C5);
+      padding: 30px 40px 15px;
+    }
+
+    &-select {
+      @include text(500, 18px, 22px, $black);
+      border-radius: 10px;
+      border: 1px solid #ABB1C5;
+      background: white;
+      padding: 19px 40px 19px 20px;
+      margin: 0 22px 40px;
+
+      &-diameter {
+        padding-right: 168px;
+      }
+    }
+  }
+
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px
+
+  }
+
+  &__card {
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 20px;
+    width: calc(25% - 40px);
+
+    &-desc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 16px 24px;
+
+      &-a {
+        @include text(800, 18px, 22px, #ABB1C5);
+      }
+
+      &-b {
+        @include text(500, 18px, 22px, #ABB1C5);
+      }
+
+    }
+
+    &-img {
+      border-radius: 10px;
+      background: #F2F4F7;
+      margin: 0 15px 15px;
+      width: 90%;
+    }
+
+    &-title {
+      @include text(500, 18px, 22px, $black);
+      padding: 0 0 11px 22px;
+    }
+
+    &-price {
+      @include text(700, 20px, 22px, $blue);
+      padding: 0 0 16px 22px;
+    }
+
+    &-btn {
+      @include text(600, 16px, 22px, $blue);
+      border: 1px solid $blue;
+      border-radius: 20px;
+      padding: 9px 0;
+      width: 80%;
+      margin: 0 25px 20px;
+      cursor: pointer;
+
+      &_active {
+        color: white;
+        background: $blue;
+
+        &:hover {
+          background: blue;
+
+        }
+      }
+
+    }
+
+  }
+
+  &__btns {
+    text-align: center;
+    margin-top: 50px;
+
+
+    &-btn {
+      @include text(700, 20px, 22px, #fff);
+      border-radius: 10px;
+      padding: 19px 90px;
+      background: $blue;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: white;
+        color: $blue;
+      }
+    }
+  }
+}
+
+
+.bikeList__card-btn .hover {
+  display: none;
+}
+
+.bikeList__card-btn:hover .notHover {
+  display: none;
+}
+
+.bikeList__card-btn:hover .hover {
+  display: inline-block;
+}
+
+.displayNone {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .bikeList__card {
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bikeList__card {
+    margin: 0 20px;
+    width: calc(50% - 40px);
+  }
+  .bikeList__box-select {
+    padding: 14px 20px 14px 10px;
+    margin: 0 15px 40px;
+    width: 70%;
+  }
+
+
+}
+
+@media (max-width: 876px) {
+
+}
+
+@media (max-width: 768px) {
+  .bikeList__box-select {
+    font-size: 12px;
+  }
+  .bikeList__box-select {
+    margin: 0 30px 40px;
+  }
+}
+
+@media (max-width: 676px) {
+  .bikeList__box-select {
+    padding: 10px 0;
+    margin: 0 19px 20px;
+  }
+  .bikeList__box-title {
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .bikeList__box-select {
+    width: 80%;
+    margin-left: 75px;
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+
+  }
+  .bikeList__box-title {
+    padding: 25px 30px;
+    margin-left: 50px;
+  }
+  .bikeList__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .bikeList__box-title {
+    padding: 25px 0px;
+    margin-left: 30px;
+  }
+  .bikeList__box-select {
+    width: 80%;
+    margin-left: 30px;
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .bikeList__box-select {
+    font-size: 15px;
+  }
+  .bikeList__box-title {
+    font-size: 14px;
+  }
+  }
+
+@media (max-width: 320px) {
+}

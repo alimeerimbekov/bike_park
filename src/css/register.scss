@@ -1,0 +1,676 @@
+.register {
+  &__registers {
+    background: #F2F4F7;
+    border-radius: 20px;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__title {
+    @include text(600, 36px, 120%, $black);
+    text-align: center;
+    padding: 56px 0 41px;
+  }
+
+  &__type {
+
+    &-subtitle {
+      @include text(500, 16px, 22px, #ABB1C5);
+      padding-bottom: 11px;
+    }
+
+    &-time {
+      @include text(500, 18px, 22px, $black);
+    }
+  }
+
+  &__choice {
+    position: relative;
+
+    &-sub {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 30px 0 100px;
+    }
+
+    &-subtitle {
+      @include text(500, 16px, 22px, #ABB1C5);
+      margin: 56px 0 13px;
+    }
+
+    &-subtit {
+      display: flex;
+      column-gap: 50px;
+      margin-left: 23%;
+    }
+
+    &-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 30px 0 100px;
+
+    }
+
+    &-img {
+      width: 60px;
+      height: 45px;
+      background: white;
+      position: absolute;
+      left: 20px;
+    }
+
+    &-title {
+      @include text(500, 18px, 22px, $black);
+      margin-bottom: 30px;
+    }
+
+    &-icons {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 70px;
+    }
+
+    &-price {
+      @include text(700, 20px, 22px, $blue);
+
+      &-padd {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-btn {
+      border: 1px solid $blue;
+      border-radius: 60% 5px 5px 60%;
+      padding: 10px 39px;
+      margin-left: 49px;
+      color: $blue;
+      cursor: pointer;
+      background: none;
+      margin-bottom: 70px;
+    }
+
+    &-left {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__column {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    margin-right: 30px;
+
+    &-title {
+      padding-bottom: 11px;
+      @include text(500, 16px, 22px, #ABB1C5);
+    }
+
+    &-summa {
+      padding-bottom: 11px;
+      @include text(700, 18px, 22px, $blue);
+    }
+  }
+
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F2F4F7;
+    margin: 34px 0 0;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 70px;
+
+    &-title {
+      @include text(500, 16px, 22px, #ABB1C5);
+      padding: 60px 0 15px 49px;
+    }
+
+    &-input {
+      border-radius: 20px;
+      width: 90%;
+      border: 1px solid #ABB1C5;
+      padding: 19px 0 19px 20px;
+      margin: 0 40px 20px 40px;
+    }
+
+    &-radio {
+      font-size: 40px
+    }
+
+    &-oplata {
+      @include text(500, 18px, 22px, #737B98);
+      border: none;
+      border-radius: 20px;
+      margin: 15px 30px 72px;
+      background: white;
+      padding: 21px 16px;
+
+      &-text {
+        padding: 0 40px;
+        margin-top: 15px;
+      }
+
+      &-icon {
+        margin-top: 15px;
+      }
+    }
+
+    &-forms {
+      width: calc(50% - 20px);
+    }
+
+
+  }
+
+
+  &__forms {
+    &-title {
+      @include text(500, 16px, 22px, #ABB1C5);
+      padding: 62px 0 15px;
+    }
+
+    &-time {
+      display: flex;
+      column-gap: 50px;
+    }
+
+    &-select {
+      width: calc(50% - 20px);
+      padding: 19px 20px 19px;
+      margin-right: 20px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    &-input {
+      border-radius: 20px;
+      width: 95%;
+      margin: 20px 20px 20px 0;
+      border: 1px solid #ABB1C5;
+      padding: 19px 0 19px 20px;
+    }
+
+    &-box {
+      border: 1px solid #14233D;
+      border-radius: 20px;
+      padding: 20px 0 20px 20px;
+      margin-right: 20px;
+
+      &-text {
+        @include text(500, 16px, 22px, #ABB1C5);
+        padding-bottom: 9px;
+      }
+
+      &-desc {
+        @include text(500, 16px, 22.4px, $black);
+      }
+    }
+
+  }
+
+
+  &__btns {
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    background: #F2F4F7;
+    padding-bottom: 40px;
+
+    &-btn {
+      @include text(700, 20px, 22px, #fff);
+      padding: 19px 45px;
+      background: $blue;
+      border-radius: 10px;
+      border: none;
+
+      &:hover {
+        background: white;
+        border: 1px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+}
+
+.decor {
+  margin: 60px 0 212px;
+
+  &__info {
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding: 56px 0 70px;
+
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    &-btn {
+      @include text(700, 20px, 22px, #fff);
+      padding: 19px 29px;
+      background: $blue;
+      border-radius: 20px;
+      border: none;
+
+      &:hover {
+        background: none;
+        border: 1px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+}
+
+.register__form-formaOplata {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .register__form-oplata {
+    margin: 15px 20px 72px;
+    position: relative;
+  }
+  .register__form-oplata-icon {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+  }
+  .register__form-oplata-text {
+    padding: 0 45px 0 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 1024px) {
+  .register__choice-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .register__choice-sub {
+    padding: 0 20px 0 38px;
+  }
+  .register__choice-card {
+    padding: 0 30px 0 32px;
+  }
+  .register__choice-img {
+    left: 222px;
+  }
+  .register__form-oplata-text {
+    padding: 0 37px 0 10px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 876px) {
+  .register__choice-subtit {
+    column-gap: 30px;
+    margin-left: 14%;
+  }
+  .register__choice-title {
+    width: calc(48% - 10px);
+  }
+  .register__choice-icons {
+    column-gap: 50px;
+  }
+  .register__choice-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #297FFF;
+    margin-left: 20px;
+    margin-right: -10px;
+  }
+  .register__choice-img {
+    left: 290px;
+  }
+  .register__form-formaOplata {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .register__form-oplata {
+    text-align: center;
+    margin: 10px 20px 0 48px;
+    position: relative;
+    justify-content: space-between;
+  }
+  .register__forms-box-desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #14233D;
+  }
+  .register__form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABB1C5;
+    padding: 60px 0 15px 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register__type-subtitle {
+    font-size: 14px;
+  }
+  .register__type-time {
+    font-size: 16px;
+  }
+  .register__title {
+    font-size: 30px;
+  }
+  .register__choice-icons {
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 15px;
+  }
+  .register__choice-price {
+    margin-left: -40px;
+    padding-top: 10px;
+    font-size: 17px;
+  }
+  .register__choice-subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin: 40px 0 13px;
+  }
+  .register__choice-subtit {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    margin-left: 10%;
+  }
+  .register__choice-img {
+    left: 210px;
+    margin-top: 26px;
+  }
+  .register__choice-icons {
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    margin-left: -60px;
+  }
+  .register__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 40px;
+    margin-right: 30px;
+  }
+  .register__forms-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABB1C5;
+    padding: 62px 0 15px;
+  }
+  .register__forms-box-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABB1C5;
+    padding-bottom: 9px;
+  }
+  .register__forms-box-desc {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22.4px;
+    color: #14233D;
+  }
+  .register__form-forms .register__form-title:first-child {
+    padding-top: 60px;
+  }
+  .register__form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABB1C5;
+    padding: 45px 0 15px 49px;
+  }
+
+}
+
+@media (max-width: 676px) {
+  .register__choice-icons {
+    column-gap: 40px;
+    margin-left: -40px;
+  }
+  .register__title {
+    font-size: 26px;
+  }
+  .register__type-time {
+    font-size: 14px;
+  }
+  .register__choice-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin: 40px 0 13px;
+  }
+  .register__choice-sub {
+    padding: 0 20px 0 10px;
+  }
+  .register__choice-subtit {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 25px;
+    margin-left: 5%;
+  }
+  .register__choice-title {
+    font-size: 15px;
+    width: calc(42% - 10px);
+    margin-left: -20px;
+  }
+  .register__choice-img {
+    display: none;
+  }
+  .register__row-btn {
+    margin-left: 15px;
+  }
+  .register__forms-time {
+    column-gap: 0;
+  }
+  .register__forms-box-desc {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 22.4px;
+    color: #14233D;
+  }
+}
+
+@media (max-width: 576px) {
+  .register__form-forms {
+    width: calc(100% - 20px);
+  }
+  .register__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 125px;
+    row-gap: 10px;
+  }
+  .register__type-subtitle {
+    font-size: 16px;
+  }
+  .register__type-time {
+    font-size: 15px;
+  }
+  .register__choice-subtitle {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin: 35px 0 13px;
+  }
+  .register__choice-subtit {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 4px;
+    margin-left: 2%;
+  }
+  .register__choice-icons {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 10px;
+    margin-left: -40px;
+    padding-top: 20px;
+  }
+  .register__choice-price {
+    margin-left: -50px;
+    padding-top: 28px;
+    font-size: 13px;
+  }
+  .register__choice-title {
+    font-size: 12px;
+
+    width: calc(42% - 10px);
+    margin-left: -20px;
+  }
+  .register__choice-card {
+    padding: 10px 30px 0 32px;
+  }
+  .register__row-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .register__column-summa {
+    font-size: 14px;
+  }
+  .register__title {
+    font-size: 24px;
+  }
+  .register__form-oplata {
+    text-align: center;
+    margin: 10px 0 0 15px;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .register__form-oplata:first-child {
+    margin-left: 40px;
+  }
+  .register__form-forms:last-child {
+    padding: 0 20px 0 40px;
+  }
+  .register__btns-btn {
+    font-size: 18px;
+    padding: 16px 40px;
+  }
+  .register__forms-box-desc {
+    font-size: 13px;
+
+  }
+}
+
+@media (max-width: 425px) {
+  .register__title {
+    font-size: 22px;
+  }
+  .register__box {
+    margin-left: 100px;
+  }
+  .register__choice-subtitle {
+    width: calc(35% - 10px);
+  }
+  .register__choice-subtitle:last-child {
+    margin-right: -40px;
+  }
+
+  .register__choice-subtit .register__choice-subtitle:last-child {
+    margin-left: 12px;
+    margin-right: 5px;
+  }
+
+  .register__choice-subtit {
+    column-gap: 12px;
+    margin-left: -14px;
+  }
+  .register__choice-title {
+    font-size: 10px;
+    width: calc(38% - 10px);
+    margin-left: -20px;
+  }
+  .register__choice-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  .register__choice-icons {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 10px;
+    margin-left: -50px;
+    padding-top: 15px;
+  }
+  .register__column {
+    column-gap: 30px;
+    margin-right: 10px;
+  }
+  .register__column-title {
+    font-size: 14px;
+  }
+  .register__column {
+    column-gap: 20px;
+  }
+  .register__form-oplata {
+    margin: 5px 0 0 5px;
+  }
+  .register__form-oplata:first-child {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .register__box {
+    margin-left: 65px;
+  }
+  .register__column-title {
+    font-size: 12px;
+  }
+  .register__column-summa {
+    font-size: 12px;
+  }
+  .register__row-btn {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+}
+

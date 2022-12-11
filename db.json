@@ -1,0 +1,100 @@
+{
+  "bike" : [
+    {
+      "id" : 1,
+      "title" : "Stels Navigator 300 Lady",
+      "gender": "men",
+      "view" : "Mountain",
+      "diameter" : "22",
+      "year" : "2014",
+      "color" : "green",
+      "stock" : "yes",
+      "price" : 700,
+      "images" : "https://bikes.kg/wp-content/uploads/2017/01/u3qe582tsab0lvw4ys3mnboub8xxc6aw.jpg"
+    },
+    {
+      "id" : 2,
+      "title" : "Stels Miss 6000 26 D",
+      "gender": "men",
+      "view" : "Road",
+      "diameter" : "22",
+      "year" : "2012",
+      "color" : "blue",
+      "stock" : "yes",
+      "price" : 1000,
+      "images" : "https://bikes.kg/wp-content/uploads/2018/12/miss-6000_d_26_v010_light_blue_glossy.jpg"
+    },
+    {
+      "id" : 3,
+      "title" : "Desna 2610 MD 26 V010",
+      "gender": "men",
+      "view" : "Road",
+      "diameter" : "20",
+      "year" : "2014",
+      "color" : "red",
+      "stock" : "no",
+      "price" : 500,
+      "images" : "https://bikes.kg/wp-content/uploads/2019/12/desna-2610-md-26-v010-red-black.1875x1300.jpg"
+    },
+    {
+      "id" : 4,
+      "title" : "Stels Navigator 640 MD",
+      "gender": "",
+      "view" : "Touring",
+      "diameter" : "22",
+      "year" : "2014",
+      "color" : "green",
+      "stock" : "no",
+      "price" : 900,
+      "images" : "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
+    },
+    {
+      "id" : 5,
+      "title" : " Aist Sputnik 1.1 W 28",
+      "gender": "men",
+      "view" : "Cyclocross",
+      "diameter" : "18",
+      "year" : "2018",
+      "color" : "yellow",
+      "stock" : "yes",
+      "price" : 800,
+      "images" : "https://bikes.kg/wp-content/uploads/2021/06/db76e43fe39066dd261c395eb304a650.jpg"
+    },
+    {
+      "id" : 6,
+      "title" : " Aist Rosy 1.0 Disc 27.5",
+      "gender": "men",
+      "view" : "Cyclocross",
+      "diameter" : "20",
+      "year" : "2016",
+      "color" : "purple",
+      "stock" : "yes",
+      "price" : 1000,
+      "images" : "https://bikes.kg/wp-content/uploads/2021/06/f9476cc6-50e3-11ec-0382-326661316363_39a4cf2b-527e-11ec-5d87-326661316363-1024x633.jpeg"
+    },
+    {
+      "id" : 7,
+      "title" : " Aist Quest Disc",
+      "gender": "men",
+      "view" : "Road",
+      "diameter" : "22",
+      "year" : "2017",
+      "color" : "Red",
+      "stock" : "yes",
+      "price" : 400,
+      "images" : "https://bikes.kg/wp-content/uploads/2022/07/ac8921437340a5075a14197a92d08ee0.jpg"
+    },
+    {
+      "id" : 8,
+      "title" : "Aist Quest Disc",
+      "gender": "men",
+      "view" : "Road",
+      "diameter" : "18",
+      "year" : "2018",
+      "color" : "green",
+      "stock" : "yes",
+      "price" : 500,
+      "images" : "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
+    }
+  ]
+}

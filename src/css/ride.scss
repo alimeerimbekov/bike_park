@@ -1,0 +1,143 @@
+.description {
+  background: #F2F4F7;
+  padding: 65px 40px;
+  border-radius: 20px;
+  margin-bottom: 200px;
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__box {
+    width: calc(50% - 15px);
+
+    &-img {
+      width: 90%;
+      height: 70%;
+      padding-top: 60px;
+    }
+
+    &-title {
+      @include text(600, 20px, 22px, $black);
+      padding-bottom: 32px;
+    }
+
+    &-text {
+      @include text(500, 18px, 120%, $black);
+    }
+  }
+
+  &__subtitle {
+    @include text(600, 20px, 22px, $black);
+    margin-bottom: 36px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  &__card {
+    width: calc(25% - 15px);
+
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      @include text(500, 16px, 140%, $black);
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .regulations__card__img {
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 1024px) {
+  .description__box-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .description__subtitle {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .description__card {
+    min-width: 170px;
+  }
+  .description__card-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #14233D;
+  }
+  .description__box-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 876px) {
+  .description__cards {
+    row-gap: 20px;
+  }
+  .description__card {
+    width: 31%;
+  }
+  .description__box-img {
+    height: 90%;
+  }
+  .description__box-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description__card {
+    width: 47%;
+  }
+  .description__box-img {
+    height: 80%;
+  }
+}
+
+@media (max-width: 676px) {
+  .description__box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .description__card {
+    width: 100%;
+  }
+  .description__box-img {
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+  .description {
+    padding: 50px 20px;
+    margin-bottom: 150px;
+  }}
+
+@media (max-width: 320px) {
+}

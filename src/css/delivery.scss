@@ -1,0 +1,133 @@
+.regulations {
+  background: #F2F4F7;
+  border-radius: 20px;
+  padding: 56px 0 46px 40px;
+  margin: 40px 0 172px;
+
+  &__title {
+    @include text(600, 48px, 120%, $black);
+  }
+
+  &__subtitle {
+    @include text(600, 28px, 110%, $black);
+    margin: 52px 0 30px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__card {
+    width: calc(33.33333% - 20px);
+
+    &-title {
+      @include text(500, 16px, 22px, #ABB1C5);
+    }
+
+    &-desc {
+      @include text(500, 18px, 140%, $black);
+      margin: 13px 0 37px;
+    }
+
+  }
+
+  &__subtext {
+    @include text(600, 28px, 110%, $black);
+    width: 70%;
+  }
+  &__description {
+    @include text(500, 18px, 140%, $black);
+    width: 90%;
+    padding: 31px 0 0;
+    margin-bottom: 24px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .regulations__description {
+    width: 99%;
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 876px) {
+  .regulations__card:last-child {
+    display: none;
+  }
+  .regulations__card {
+    width: calc(50% - 20px);
+  }
+  .regulations__title {
+    font-size: 42px;
+  }
+  .regulations__subtitle {
+    font-size: 24px;
+  }
+  .regulations__card-desc {
+    font-size: 16px;
+  }
+  .regulations__subtext {
+    font-size: 24px;
+  }
+  .regulations__description {
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 676px) {
+  .regulations__title {
+    font-size: 40px;
+  }
+  .regulations__subtitle {
+    font-size: 22px;
+  }
+  .regulations__card-desc {
+    font-size: 15px;
+  }
+  .regulations__subtext {
+    font-size: 22px;
+  }
+  .regulations__description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .regulations {
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding: 25px 0 46px 18px;
+    margin: 40px 0 100px;
+  }
+  .regulations__subtitle {
+    margin: 26px 0 30px;
+  }
+  .regulations__card-desc {
+    font-size: 14px;
+  }
+  .regulations__description {
+    font-size: 14px;
+  }
+  .regulations__subtitle {
+    font-size: 20px;
+  }
+  .regulations__subtext {
+    font-size: 18px;
+    width: 90%;
+  }
+  .regulations__card:last-child {
+    display: none;
+  }
+  .regulations__card {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {}
+@media (max-width: 375px) {}
+@media (max-width: 320px) {}

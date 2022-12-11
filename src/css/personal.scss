@@ -1,0 +1,221 @@
+.current {
+  margin-bottom: 120px;
+
+  &__displayNone {
+    display: none;
+  }
+
+  &__boxes {
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding: 53px 40px 60px;
+  }
+
+  &__title {
+    @include text(600, 48px, 120%, $black);
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 70px;
+    border-bottom: 1px solid #ABB1C5;
+
+    &-title {
+      @include text(600, 18px, 22px, $black);
+      padding: 43px 0 25px;
+      cursor: pointer;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-title {
+      @include text(500, 16px, 22px, #ABB1C5);
+      padding: 34px 0 24px;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: 110px;
+    }
+  }
+
+  &__accordion {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #ABB1C5;
+    padding-top: 20px;
+
+
+
+
+    &-btn {
+      border: none;
+      background: none;
+      margin-left: 30px;
+    }
+    &-icon-right {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 25px;
+    }
+
+    &-icon-down {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 25px;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 50px;
+
+    }
+
+    &-panel {
+      padding: 0 0 0 30px;
+      overflow: hidden;
+      display: none;
+
+      &-displayNone {
+      }
+
+      &-line {
+        border-bottom: 1px solid #ABB1C5;
+
+      }
+
+      &-row {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-title {
+        @include text(500, 16px, 22px, #ABB1C5);
+        padding: 34px 0 24px;
+        margin-top: 34px;
+      }
+
+      &-list {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 70px;
+      }
+
+      &-listen {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 60px;
+      }
+
+      &-text {
+        @include text(500, 16px, 20px, $black);
+        margin-bottom: 14px;
+
+        &:first-child {
+          padding-right: 145px;
+        }
+      }
+
+      &-startEnd {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 60px;
+        padding: 14px 0 20px;
+      }
+
+      &-column {
+        &-text {
+          @include text(500, 16px, 22px, #ABB1C5);
+          padding-bottom: 10px;
+        }
+
+        &-sum {
+          @include text(500, 16px, 20px, $black);
+          padding-bottom: 10px;
+
+        }
+      }
+
+      &-total {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 60px;
+
+        &-card {
+          &-text {
+            @include text(500, 16px, 20px, $black);
+            padding-bottom: 14px;
+
+            &:last-child {
+              margin-bottom: 40px;
+            }
+          }
+        }
+
+        &-btns {
+          display: inherit;
+          align-items: flex-end;
+          justify-content: flex-end;
+          column-gap: 80px;
+          margin-bottom: 40px;
+          margin-left: 80px;
+        }
+
+        &-btn {
+          @include text(700, 20px, 22px, #fff);
+          background: #297FFF;
+          padding: 19px 30px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            color: $blue;
+            background: none;
+            border: 1px solid $blue;
+          }
+        }
+      }
+    }
+
+
+    &-text {
+      @include text(600, 18px, 22px, $black);
+      margin-bottom: 26px;
+
+      &:first-child {
+        padding-right: 20px;
+      }
+    }
+
+    &-dow {
+      border-radius: 5px;
+      background: none;
+      color: coral;
+      border: 1px solid coral;
+      font-size: 16px;
+      padding: 2px 4px;
+    }
+
+
+  }
+}

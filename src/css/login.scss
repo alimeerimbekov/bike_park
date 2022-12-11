@@ -1,0 +1,234 @@
+.login {
+  background: #00000050;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+
+  &__displayNone {
+    display: none;
+
+    transition: 1s;
+  }
+
+  &__iconX {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+
+
+  }
+
+  &__box {
+    background: white;
+    border-radius: 10px;
+    z-index: 10;
+    width: 640px;
+    height: 550px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  &__titles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 50px;
+    padding: 57px 40px 15px 40px;
+
+    &-title {
+      @include text(600, 18px, 22px, $black);
+      margin-left: 40px;
+      padding-bottom: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: #297FFF;
+      }
+    }
+  }
+
+  &__title {
+    @include text(500, 16px, 22px, #ABB1C5);
+    padding: 35px 40px 15px;
+  }
+
+  &__input {
+    @include text(500, 18px, 22px, #737B98);
+    width: 85%;
+    margin: 0 40px;
+    padding: 19px 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 180px;
+    right: 90px;
+    cursor: pointer;
+  }
+
+  &__btn {
+    width: 85%;
+    margin: 40px 40px 20px;
+    background: #297FFF;
+    border-radius: 10px;
+    padding: 19px 0;
+    border: none;
+    cursor: pointer;
+    @include text(700, 20px, 22px, #fff);
+  }
+
+  &__text {
+    text-align: center;
+
+    &-desc {
+      @include text(500, 16px, 20px, #ABB1C5);
+      cursor: pointer;
+
+      &:hover {
+        color: #297FFF;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .login__box {
+    width: 600px;
+    height: 420px;
+  }
+  .login__titles {
+    padding: 20px 30px 15px 30px;
+  }
+  .login__title {
+    padding: 15px 40px 15px;
+  }
+  .login__input {
+    font-size: 16px;
+    width: 80%;
+    padding: 15px 20px;
+  }
+  .login__btn {
+    width: 78%;
+    margin: 25px 60px 20px;
+  }
+  .login__form {
+    margin-left: 20px;
+  }
+  .login__icon {
+    position: absolute;
+    bottom: 145px;
+    right: 90px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 876px) {
+  .login__titles-title {
+    font-size: 16px;
+  }
+  .login__btn {
+    padding: 15px 0;
+  }
+  .login__box {
+    width: 520px;
+    height: 420px;
+  }
+  .login__iconX {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 676px) {
+  .login__box {
+    width: 450px;
+    height: 420px;
+  }
+  .login__icon {
+    position: absolute;
+    bottom: 145px;
+    right: 50px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 576px) {
+  .login__input {
+    font-size: 14px;
+    width: 76%;
+    padding: 12px 20px;
+  }
+  .login__form {
+    margin-left: 5px;
+  }
+  .login__btn {
+    width: 75%;
+    margin: 25px 44px 20px;
+    font-size: 12px;
+  }
+  .login__box {
+    width: 350px;
+    height: 412px;
+  }
+}
+
+@media (max-width: 425px) {
+  .login__titles-title {
+    font-size: 14px;
+  }
+  .home__titles-title {
+    margin-left: 20px;
+  }
+  .login__title {
+    font-size: 14px;
+  }
+  .login__box {
+    width: 325px;
+    height: 412px;
+  }
+}
+
+@media (max-width: 375px) {
+  .login__box {
+    width: 270px;
+    height: 446px;
+  }
+  .login__titles {
+    padding: 20px 30px 15px 10px;
+  }
+  .login__icon {
+    position: absolute;
+    bottom: 145px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 320px) {
+}
+
+
+

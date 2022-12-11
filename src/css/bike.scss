@@ -1,0 +1,246 @@
+.bike {
+  &__row {
+    background: #F2F4F7;
+    border-radius: 20px;
+    margin-bottom: 75px;
+  }
+
+  &__title {
+    @include text(500, 16px, 22px, #ABB1C5);
+    padding: 26px 0 33px 40px;
+    margin-top: 34px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__card {
+    position: relative;
+    padding-top: 142px;
+
+    &-img {
+      position: absolute;
+      top: 30px;
+    }
+
+    &-row {
+      background: white;
+      border-radius: 20px;
+    }
+
+    &-title {
+      @include text(500, 18px, 22px, $black);
+      padding: 49px 0 22px 24px;
+    }
+
+    &-icons {
+      display: flex;
+      column-gap: 44px;
+
+      &-price {
+        @include text(700, 20px, 22px, $blue);
+        padding: 0 0 27px 24px;
+      }
+
+      &-icon {
+        padding: 0 24px 18px 0;
+        display: flex;
+        column-gap: 10px;
+      }
+    }
+  }
+
+  &__btns {
+    text-align: center;
+  }
+
+  &__btn {
+    padding: 19px 80px;
+    @include text(700, 20px, 22px, #fff);
+    border-radius: 20px;
+    background: #297FFF;
+    border: none;
+    cursor: pointer;
+    margin: 45px 0;
+
+    &:hover {
+      background: white;
+      color: $blue;
+    }
+  }
+
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Фактическое всплывающее окно (появляется сверху) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #fff;
+  color: $black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -140px;
+  left: 50%;
+  margin-left: -400%;
+}
+
+/* Всплывающее окно со стрелками */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  rotate: 180deg;
+}
+
+/* Переключите этот класс при нажатии на всплывающий контейнер (скрыть и показать всплывающее окно) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Добавить анимацию (исчезает во всплывающем окне) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+  .bike__cards {
+    column-gap: 40px;
+  }
+  .bike__card {
+    width: calc(25% - 30px);
+  }
+  .bike__card-img {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bike__card {
+    min-width: 215px;
+  }
+  .bike__card-img {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .bike__card-img {
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .bike__card-icons {
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 876px) {
+  .bike__card-img {
+    margin-left: -25px;
+    top: 70px;
+    width: 120%;
+  }
+  .bike__cards {
+    column-gap: 40px;
+    flex-wrap: wrap;
+  }
+  .bike__card-icons-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .bike__card-icons {
+    column-gap: 8px;
+  }
+  .bike__card {
+    padding-left: 10px;
+  }
+  .bike__card-row {
+    min-width: 210px;
+  }
+  .bike__card-row {
+    padding: 20px;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bike__cards {
+    display: flex;
+    column-gap: 50px;
+  }
+  .bike__card-row {
+    padding: 20px;
+  }
+  .bike__card-img {
+    margin-left: -25px;
+    top: 40px;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 676px) {
+  .bike__cards {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bike__card {
+    min-width: 250px;
+  }
+  .bike__card-icons-icon {
+    padding: 0 25px 18px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+  .bike__card {
+    min-height: 215px;
+  }
+}

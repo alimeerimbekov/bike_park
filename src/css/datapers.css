@@ -1,0 +1,5 @@
+.data__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

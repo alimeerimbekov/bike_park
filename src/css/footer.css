@@ -1,0 +1,7 @@
+.footer {
+  background: #272934;
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+}
