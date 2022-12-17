@@ -1,100 +1,154 @@
 {
-  "bike" : [
+  "bike": [
     {
-      "id" : 1,
-      "title" : "Stels Navigator 300 Lady",
+      "id": 1,
+      "title": "Stels Navigator 300 Lady",
       "gender": "men",
-      "view" : "Mountain",
-      "diameter" : "22",
-      "year" : "2014",
-      "color" : "green",
-      "stock" : "yes",
-      "price" : 700,
-      "images" : "https://bikes.kg/wp-content/uploads/2017/01/u3qe582tsab0lvw4ys3mnboub8xxc6aw.jpg"
+      "view": "Mountain",
+      "diameter": "22",
+      "year": "2014",
+      "color": "green",
+      "stock": "yes",
+      "price": 700,
+      "images": "https://bikes.kg/wp-content/uploads/2017/01/u3qe582tsab0lvw4ys3mnboub8xxc6aw.jpg"
     },
     {
-      "id" : 2,
-      "title" : "Stels Miss 6000 26 D",
+      "id": 2,
+      "title": "Stels Miss 6000 26 D",
       "gender": "men",
-      "view" : "Road",
-      "diameter" : "22",
-      "year" : "2012",
-      "color" : "blue",
-      "stock" : "yes",
-      "price" : 1000,
-      "images" : "https://bikes.kg/wp-content/uploads/2018/12/miss-6000_d_26_v010_light_blue_glossy.jpg"
+      "view": "Road",
+      "diameter": "22",
+      "year": "2012",
+      "color": "blue",
+      "stock": "yes",
+      "price": 1000,
+      "images": "https://bikes.kg/wp-content/uploads/2018/12/miss-6000_d_26_v010_light_blue_glossy.jpg"
     },
     {
-      "id" : 3,
-      "title" : "Desna 2610 MD 26 V010",
+      "id": 3,
+      "title": "Desna 2610 MD 26 V010",
       "gender": "men",
-      "view" : "Road",
-      "diameter" : "20",
-      "year" : "2014",
-      "color" : "red",
-      "stock" : "no",
-      "price" : 500,
-      "images" : "https://bikes.kg/wp-content/uploads/2019/12/desna-2610-md-26-v010-red-black.1875x1300.jpg"
+      "view": "Road",
+      "diameter": "20",
+      "year": "2014",
+      "color": "red",
+      "stock": "no",
+      "price": 500,
+      "images": "https://bikes.kg/wp-content/uploads/2019/12/desna-2610-md-26-v010-red-black.1875x1300.jpg"
     },
     {
-      "id" : 4,
-      "title" : "Stels Navigator 640 MD",
+      "id": 4,
+      "title": "Stels Navigator 640 MD",
       "gender": "",
-      "view" : "Touring",
-      "diameter" : "22",
-      "year" : "2014",
-      "color" : "green",
-      "stock" : "no",
-      "price" : 900,
-      "images" : "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
+      "view": "Touring",
+      "diameter": "22",
+      "year": "2014",
+      "color": "green",
+      "stock": "no",
+      "price": 900,
+      "images": "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
     },
     {
-      "id" : 5,
-      "title" : " Aist Sputnik 1.1 W 28",
+      "id": 5,
+      "title": " Aist Sputnik 1.1 W 28",
       "gender": "men",
-      "view" : "Cyclocross",
-      "diameter" : "18",
-      "year" : "2018",
-      "color" : "yellow",
-      "stock" : "yes",
-      "price" : 800,
-      "images" : "https://bikes.kg/wp-content/uploads/2021/06/db76e43fe39066dd261c395eb304a650.jpg"
+      "view": "Cyclocross",
+      "diameter": "18",
+      "year": "2018",
+      "color": "yellow",
+      "stock": "yes",
+      "price": 800,
+      "images": "https://bikes.kg/wp-content/uploads/2021/06/db76e43fe39066dd261c395eb304a650.jpg"
     },
     {
-      "id" : 6,
-      "title" : " Aist Rosy 1.0 Disc 27.5",
+      "id": 6,
+      "title": " Aist Rosy 1.0 Disc 27.5",
       "gender": "men",
-      "view" : "Cyclocross",
-      "diameter" : "20",
-      "year" : "2016",
-      "color" : "purple",
-      "stock" : "yes",
-      "price" : 1000,
-      "images" : "https://bikes.kg/wp-content/uploads/2021/06/f9476cc6-50e3-11ec-0382-326661316363_39a4cf2b-527e-11ec-5d87-326661316363-1024x633.jpeg"
+      "view": "Cyclocross",
+      "diameter": "20",
+      "year": "2016",
+      "color": "purple",
+      "stock": "yes",
+      "price": 1000,
+      "images": "https://bikes.kg/wp-content/uploads/2021/06/f9476cc6-50e3-11ec-0382-326661316363_39a4cf2b-527e-11ec-5d87-326661316363-1024x633.jpeg"
     },
     {
-      "id" : 7,
-      "title" : " Aist Quest Disc",
+      "id": 7,
+      "title": " Aist Quest Disc",
       "gender": "men",
-      "view" : "Road",
-      "diameter" : "22",
-      "year" : "2017",
-      "color" : "Red",
-      "stock" : "yes",
-      "price" : 400,
-      "images" : "https://bikes.kg/wp-content/uploads/2022/07/ac8921437340a5075a14197a92d08ee0.jpg"
+      "view": "Road",
+      "diameter": "22",
+      "year": "2017",
+      "color": "Red",
+      "stock": "yes",
+      "price": 400,
+      "images": "https://bikes.kg/wp-content/uploads/2022/07/ac8921437340a5075a14197a92d08ee0.jpg"
     },
     {
-      "id" : 8,
-      "title" : "Aist Quest Disc",
+      "id": 8,
+      "title": "Aist Quest Disc",
       "gender": "men",
-      "view" : "Road",
-      "diameter" : "18",
-      "year" : "2018",
-      "color" : "green",
-      "stock" : "yes",
-      "price" : 500,
-      "images" : "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
+      "view": "Road",
+      "diameter": "18",
+      "year": "2018",
+      "color": "green",
+      "stock": "yes",
+      "price": 500,
+      "images": "https://bikes.kg/wp-content/uploads/2020/05/667.jpeg"
+    }
+  ],
+  "users": [
+    {
+      "email": "ali@mail.ru",
+      "password": "$2a$10$04VNcRUEZCvdYwVC6Kqqi.viyWyh/qNxkBoGgYnC/D0IiaBvhN5Ai",
+      "username": "ali",
+      "number": "099999999",
+      "id": 1
+    },
+    {
+      "email": "ali12@mailru",
+      "password": "$2a$10$.l/Hasa7jA3ikvEPhpIrouU.Q5QC5NA.3Z5N0rVOu/J0Rtb8caJy2",
+      "id": 2
+    },
+    {
+      "email": "ali111@mailru",
+      "password": "$2a$10$vFiKnb01CL1YgfAectDCgOBahTevUpdTTTrmJiMueKXGeGEhWx8d.",
+      "id": 3
+    },
+    {
+      "email": "asd@mail.ru",
+      "password": "$2a$10$H1HyLxKvmUAjM4YJ6qKchuCwMA3rDT7sBGjE5v5t3a51ATIF6NHM.",
+      "username": "asd",
+      "phone": "1234567890",
+      "id": 4
+    },
+    {
+      "email": "asdf@mail.ru",
+      "password": "$2a$10$lbjc5vus4JQqGGdJe.UPlOXGxFthvwuzHDHyoneJS6BnikZRyw0Wu",
+      "username": "asdf",
+      "phone": "1234567890",
+      "id": 5
+    },
+    {
+      "email": "poi12@mail.ru",
+      "password": "$2a$10$YsBehDb1N/HJcClPJ0Dmku4NB9U4aXDujW6GPOlO.lM5BOCKWp4Gm",
+      "username": "poi",
+      "phone": "1234567890",
+      "id": 6
+    },
+    {
+      "email": "lkj@mail.ru",
+      "password": "$2a$10$8XnTE7.Z0snjnU3FWu/OzunMChVsWWcYi5SnUbetaxTz3U2F42fFi",
+      "username": "lkj",
+      "phone": "0101",
+      "id": 7
+    },
+    {
+      "email": "askar007@mail.ru",
+      "password": "$2a$10$SThL7tdOvGOkPPctjRwS6eUz6jhKdazf3BO0aZdHa6np10YjHP/kO",
+      "username": "askar",
+      "phone": "010101",
+      "id": 8
     }
   ]
 }

@@ -2,17 +2,20 @@ import {changeUser, getFromUserLocalStorage, user} from "./user.js";
 
 getFromUserLocalStorage()
 
+let formRegister = document.querySelector('.registration__form')
 
-let formLogin = document.querySelector('.login__form')
-
-formLogin.addEventListener('submit', (e) => {
+formRegister.addEventListener('submit', (e) => {
     e.preventDefault();
     let userData = {
-        email: e.target[0].value,
-        password: e.target[1].value
+        username: e.target[0].value,
+        phone: e.target[1].value,
+        email: e.target[2].value,
+        password: e.target[3].value
     }
+    // console.log(userData)
 
-    fetch('http://localhost:3030/login', {
+
+    fetch('http://localhost:3030/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,11 +23,11 @@ formLogin.addEventListener('submit', (e) => {
         body: JSON.stringify(userData)
     }).then((res) => res.json())
         .then((res) => {
-            changeUser( {
+            changeUser({
                 ...res.user,
                 token: res.accessToken
             })
-        })
-        .catch((err) => alert(err))
-});
 
+        })
+        .catch(() => alert('Аккаунт не создан'))
+});
